@@ -1,0 +1,80 @@
+.movie-list {
+  width: 100vw;
+  margin-left: 1rem;
+  padding-bottom: 4rem;
+}
+
+.movie-card img {
+  width: 15rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 20px;
+  border: none;
+}
+
+.movie-title {
+  color: white;
+  text-align: center;
+}
+
+.movie-card {
+  position: relative;
+}
+
+.movie-card img {
+    width: 14rem;
+    height: auto;
+    object-fit: cover;
+    padding: 0.5rem;
+    border-radius: 20px;
+  }
+
+.movie-card .collection {
+  position: absolute;
+  top: 6%;
+  left: 8%;
+  color: red;
+  background-color: white;
+  padding: 0.5rem;
+  border: 2px solid red;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.movie-card .youtube {
+  height: 4rem;
+  width: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transition: 0.5s;
+}
+
+.movie-card button:hover {
+  background-color: red;
+  color: white;
+}
+
+.movie-card .youtube:hover {
+    box-shadow:
+      0 0 1.5rem .5rem #fff,  /* inner white */
+      0 0 1.5rem .75rem #f0f, /* middle magenta */
+      0 0 2rem 1rem #0ff; /* outer cyan */
+  }
+
+.small {
+  scale: 0;
+}
+
+.movie-card:hover .small {
+  scale: 1;
+}
+
+@media screen and (max-width:900px) {
+  .swiper-slide{
+    width: 100% !important;
+  }
+  
+  
+}

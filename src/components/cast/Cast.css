@@ -1,0 +1,18 @@
+.cast{
+    background-color: transparent;
+}
+
+.cast-wraper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.cast-info img{
+    width: 6rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 10px;
+    border: none;
+}

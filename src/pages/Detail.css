@@ -1,0 +1,178 @@
+.detail-container {
+  overflow: hidden;
+  font-weight: unset;
+  font-size: unset;
+  background: black;
+  color: white;
+}
+.detail-backdrop img {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(30%);
+}
+
+.notify {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  height: 5rem;
+  background: white;
+  border-radius: 10px;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  color: black;
+  transform: translateX(0px);
+  transition: 0.5s;
+}
+
+.notify .tick {
+  height: 3rem;
+  width: auto;
+  object-fit: cover;
+  filter: brightness(100%);
+}
+
+.dissapear {
+  transform: translateX(500px);
+}
+
+.detail-poster {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 0;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-cover-poster {
+  width: 80%;
+  height: 50rem;
+}
+
+.detail-cover-poster img {
+  height: 40rem;
+  width: auto;
+  object-fit: cover;
+  border-radius: 30px;
+  padding-left: 2rem;
+  position: absolute;
+  top: -40%;
+}
+
+.detail-info {
+  width: 100%;
+  height: auto;
+}
+
+.detail-info-wraper {
+  position: absolute;
+  top: -47%;
+}
+
+.detail-info-wraper h1 {
+  font-size: 4rem;
+  margin: 0 0.5rem 0 0;
+  color: red;
+}
+.detail-genre {
+  margin-top: 2.5rem;
+}
+
+.detail-genre span {
+  font-size: medium;
+  padding: 1rem;
+  border: 2px white solid;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  margin: 0 1rem 1rem 0;
+}
+
+.detail-rate {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  color: red;
+}
+
+p {
+  font-family: initial;
+  font-size: larger;
+}
+
+.collection-button {
+  display: flex;
+  position: relative;
+}
+
+.collection-button button {
+  height: 3rem;
+  width: 8rem;
+  border-radius: 20px;
+  border: white solid 3px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(236, 100, 51);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-size: large;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.collection-button button:hover {
+  background-color: red;
+}
+
+.collection-button button:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.appear {
+  z-index: 99;
+}
+
+@media screen and (max-width: 900px) {
+  .detail-cover-poster img {
+    display: none;
+  }
+
+  .detail-info-wraper {
+    top: 0;
+    left: 2%;
+    width: 100%;
+  }
+
+  .detail-info-wraper h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .detail-genre {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .cast-wraper {
+    grid-template-columns: auto auto;
+  }
+
+  .video-wraper {
+    padding-top: 40rem;
+  }
+}

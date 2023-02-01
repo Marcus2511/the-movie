@@ -1,0 +1,53 @@
+.footer {
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+  background: url("https://themovie-zth.vercel.app/static/media/footer-bg.67e95f05e76a8cebf7e2.jpg");
+}
+
+.footer-logo img {
+  height: 4rem;
+  width: auto;
+  object-fit: cover;
+  padding-right: 1.5rem;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  color: white;
+  font-size: 140%;
+  cursor: pointer;
+}
+
+.footer-logo h2 {
+  transition: 0.5s;
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+}
+
+.footer-info .col-link {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info .col-link a {
+  padding-top: 1rem;
+  color: white;
+  font-size: larger;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.footer-logo h2:hover,
+.col-link a:hover {
+  color: red;
+}

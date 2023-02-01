@@ -1,0 +1,70 @@
+.tv-list {
+  width: 100vw;
+  margin-left: 1rem;
+  padding-bottom: 4rem;
+}
+
+.tv-card {
+  position: relative;
+}
+
+.tv-card img {
+  width: 15rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 20px;
+  border: none;
+}
+
+.tv-title {
+  color: white;
+  text-align: center;
+}
+
+.tv-card img {
+  width: 14rem;
+  height: auto;
+  object-fit: cover;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.tv-card .collection {
+  position: absolute;
+  top: 6%;
+  left: 8%;
+  color: red;
+  background-color: white;
+  padding: 0.5rem;
+  border: 2px solid red;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.tv-card .youtube {
+  height: 4rem;
+  width: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transition: 0.5s;
+}
+
+.tv-card button:hover {
+  background-color: red;
+  color: white;
+}
+
+.tv-card .youtube:hover {
+  box-shadow: 0 0 1rem 0.5rem #fff, /* inner white */ 0 0 1.5rem 0.75rem #f0f,
+    /* middle magenta */ 0 0 2rem 1rem #0ff; /* outer cyan */
+}
+
+.small {
+  scale: 0;
+}
+
+.tv-card:hover .small {
+  scale: 1;
+}

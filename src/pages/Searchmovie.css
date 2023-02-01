@@ -1,0 +1,127 @@
+.searchmovie-wraper {
+  width: 100%;
+  height: auto;
+  background: black;
+  overflow: hidden;
+}
+.searchmovie-header {
+  width: 100vw;
+  color: white;
+  font-size: 2rem;
+  background: url("https://themovie-zth.vercel.app/static/media/footer-bg.67e95f05e76a8cebf7e2.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0 0rem 0;
+}
+
+.searchmovie-container {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  border: none;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.searchmovie-searchbox {
+  display: flex;
+  justify-content: center;
+}
+
+.searchmovie-searchbox input {
+  width: 15rem;
+  border-radius: 2rem 0 0 2rem;
+  font-size: larger;
+  padding: 1rem;
+}
+
+.searchmovie-searchbox button {
+  background-color: transparent;
+  color: white;
+  border-radius: 0 2rem 2rem 0;
+  border: solid 1px rgb(67, 219, 21);
+  font-size: larger;
+}
+
+.searchmovie-searchbox button:hover {
+  background: rgb(67, 219, 21);
+}
+
+.base-movie {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 2rem 3rem 0 1rem;
+}
+
+.movies-postersearch {
+  color: white;
+  text-align: center;
+  font-size: larger;
+  position: relative;
+}
+
+.movies-postersearch img {
+  width: 14rem;
+  height: auto;
+  object-fit: cover;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.movies-postersearch .collection {
+  position: absolute;
+  top: 6%;
+  left: 8%;
+  color: red;
+  background-color: white;
+  padding: 0.5rem;
+  border: 2px solid red;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.movies-postersearch .youtube {
+  height: 4rem;
+  width: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transition: 0.5s;
+}
+
+.movies-postersearch button:hover {
+  background-color: red;
+  color: white;
+}
+
+.movies-postersearch .youtube:hover {
+  box-shadow:
+    0 0 1rem .5rem #fff,  /* inner white */
+    0 0 1.5rem .75rem #f0f, /* middle magenta */
+    0 0 2rem 1rem #0ff; /* outer cyan */
+}
+
+.small {
+  scale: 0;
+}
+
+.movies-postersearch:hover .small {
+  scale: 1;
+}
+
+@media screen and (max-width:900px) {
+  .base-movie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .searchmovie-searchbox{
+    margin-right: 3rem;
+  }
+
+  .searchmovie-searchbox input, .searchmovie-searchbox button{
+    width: 8rem;
+  }
+}

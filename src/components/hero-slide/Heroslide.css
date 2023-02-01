@@ -1,0 +1,95 @@
+.hero-swiper {
+  width: 100vw;
+  overflow: hidden;
+  position: static;
+  transform: 0.2s;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide .poster {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(50%);
+}
+
+.poster-movie {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  color: white;
+  top: 20%;
+}
+
+.poster-movie img {
+  height: 450px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-right: 4rem;
+}
+
+.poster-info {
+  width: 50vw;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.poster-info h1 {
+  font-size: 60px;
+}
+
+.poster-button button {
+  height: 3rem;
+  border-radius: 30px;
+  margin: 2rem;
+  padding: 0 1rem;
+  font-size: large;
+  border: 5px solid white;
+  font-weight: 700;
+}
+
+.now {
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+.now:hover {
+  background-color: white;
+  color: red;
+}
+
+.trailer {
+  background-color: transparent;
+  color: white;
+}
+
+.trailer:hover {
+  color: red;
+  background-color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .poster-movie img {
+    display: none;
+  }
+
+  .poster{
+    height: 70vh;
+  }
+
+  .poster-info{
+    width: 100%;
+    text-align: center;
+  }
+  .poster-info h4{
+    font-size: small;
+  }
+  .poster-info h1{
+    font-size: larger;
+  }
+}

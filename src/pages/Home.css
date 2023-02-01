@@ -1,0 +1,44 @@
+button{
+  cursor: pointer;
+}
+
+.youtube{
+  cursor: pointer;
+}
+
+.container {
+  background-color: black;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.home-movie-title {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-movie-title h1 {
+  margin-left: 1rem;
+}
+
+.home-movie-title button {
+  margin-right: 1.5rem;
+  height: 3rem;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  font-size: large;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: red;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }

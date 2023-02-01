@@ -1,0 +1,122 @@
+.collection-added-wraper {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection-added-wraper h2 {
+  position: absolute;
+  z-index: 39;
+  color: white;
+  font-size: 3rem;
+  color: red;
+}
+
+.collection-added-wraper img {
+  overflow: hidden;
+  position: relative;
+  color: white;
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+}
+
+.collection-added-component {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  position: relative;
+  top: 30%;
+  box-shadow: 0 0 10px 5px #48abe0, 0 0 20px 7px #ebecca, 0 0 25px 20px #8a2be2,
+    0 0 30px 25px #ff1493;
+}
+
+.collection-added {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.collection-image {
+  position: relative;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.collection-image img {
+  width: 14rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.collection-image img:hover {
+  box-shadow: 0 0 10px 5px #48abe0, 0 0 20px 7px #ebecca, 0 0 25px 20px #8a2be2,
+    0 0 30px 25px #ff1493;
+  filter: brightness(50%);
+  cursor: pointer;
+}
+
+.collection-info button {
+  width: 5rem;
+  height: auto;
+  background-color: transparent;
+  border: white 3px solid;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.collection-info button:hover {
+  background-color: red;
+}
+
+.notify {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  height: 5rem;
+  background: white;
+  border-radius: 10px;
+  position: fixed;
+  right: 0;
+  color: black;
+  transform: translateX(0px);
+  transition: 0.5s;
+  z-index: 200;
+}
+
+.notify .tick {
+  height: 3rem;
+  width: auto;
+  object-fit: cover;
+  filter: brightness(100%);
+}
+
+.dissapear {
+  transform: translateX(500px);
+}
+
+@media screen and (max-width: 900px) {
+  .collection-added-wraper h2 {
+    top: unset;
+    left: unset;
+  }
+  .collection-added-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
